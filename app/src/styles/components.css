@@ -1,0 +1,152 @@
+/* .movie-card-container {
+  padding: 2vh 1vh;
+  margin-right: 1vh;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-table;
+} */
+/* .movie-poster-container {
+  display: -webkit-flex;
+  display: flex;
+  align-items: baseline;
+  width: 22vh;
+  height: 36vh;
+  background-size: auto 100%;
+  overflow: hidden;
+} */
+
+.home-card-list {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  height: 35vh;
+  padding-top: 5vh;
+}
+/* width */
+.home-card-list::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+.home-card-list::-webkit-scrollbar-track {
+  width: 0px;
+  height: 0px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+.three-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.eight-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/*          card animation, source:uiverse.io        */
+
+.anim-card {
+  --card-height: 32vh;
+  --card-width: 22vh;
+
+  min-width: var(--card-width);
+  width: var(--card-width);
+  height: var(--card-height);
+  margin: 0 2vh;
+  background: #313131;
+  border-radius: 2vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.movie-card-data {
+  font-size: 1.8vh;
+  text-align: center;
+  transition: all 0.3s;
+  padding: 0px;
+  background-color: #232323c3;
+  height: 0px;
+}
+
+.anim-img {
+  height: 32vh;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+  border-radius: 2vh;
+}
+
+.anim-textBox {
+  opacity: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6vh;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.anim-card:hover > .anim-textBox {
+  opacity: 1;
+}
+
+.anim-card:hover .movie-card-data {
+  height: calc(var(--card-height) - 4vh);
+  padding: 2vh;
+}
+
+.movie-card-data-item {
+  border-bottom: 1px solid white;
+}
+.anim-card:hover > .anim-img {
+  position: absolute;
+  height: calc(var(--card-height) - 10vh);
+  filter: blur(0.1vh);
+  animation: anim-anim 3s infinite;
+}
+@keyframes anim-anim {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.anim-card:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
+
+/*          card animation, source:uiverse.io        */
+
+.row {
+  display: flex;
+  flex-flow: row;
+}

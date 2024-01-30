@@ -1,0 +1,64 @@
+.video-player {
+  position: absolute;
+}
+.video-player-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-flow: column;
+}
+.video-player-buttons {
+  position: relative;
+  z-index: 2;
+}
+.skip-intro-button,
+.video-player-quality-options {
+  position: relative !important;
+  z-index: 2 !important;
+  background-color: rgb(244, 67, 54) !important;
+  width: 200px;
+  padding: 1vh 3vh !important;
+  border: none !important;
+  margin-bottom: 2vh;
+  color: white;
+}
+.video-player-quality-options option {
+  padding: 1vh 2vh !important;
+}
+.video-controls-visibility {
+  opacity: 0;
+  transition: all 1s;
+}
+.show-controls {
+  z-index: 2 !important;
+  opacity: 1 !important;
+}
+.video-player-name {
+  position: absolute !important;
+  z-index: 2 !important;
+  top: 0;
+  left: 0;
+  padding: 2vh 4vh;
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.771);
+}
+.video-name-span {
+  font-size: 4vh;
+  color: white;
+}
+.video-player-pause-icon {
+  position: relative;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25vh;
+  opacity: 0;
+  transition: all 1s;
+  cursor: pointer;
+}
+.video-player-pause-icon img {
+  height: 100%;
+  object-fit: contain;
+}

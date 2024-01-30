@@ -1,0 +1,93 @@
+#home-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+.home-video-container {
+  height: 100vh;
+  /* width: calc(100vw - 2vh); */
+  margin-bottom: -55vh;
+  overflow: hidden;
+}
+
+.home-top-rated-container,
+.home-watchlist-container,
+.home-recently-watched-container {
+  color: white;
+  background-color: black;
+}
+.home-top-rated-container {
+  margin-top: 5vh;
+}
+
+.home-visitor-view {
+  padding: 5vh 10vh;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* gap: 3vh; */
+  flex-flow: column;
+}
+
+.cards-right-icon {
+}
+.cards-left-icon {
+}
+.cards-right-icon svg,
+.cards-left-icon svg {
+  font-size: 6vh !important;
+}
+
+.card-section {
+  scroll-behavior: smooth;
+}
+.loading-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.483);
+  z-index: 13;
+}
+.loading-container div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-container #container-load {
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes animation {
+  0% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -105;
+  }
+  50% {
+    stroke-dasharray: 80 10;
+    stroke-dashoffset: -160;
+  }
+  100% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -300;
+  }
+}
+
+.loading-container #spinner-load {
+  transform-origin: center;
+  animation-name: animation;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier;
+  animation-iteration-count: infinite;
+}

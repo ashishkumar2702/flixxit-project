@@ -1,0 +1,95 @@
+.single-movie-img {
+  /* width: 100%; */
+  height: 70vh;
+  margin: auto;
+  text-align: center;
+  margin-top: 20vh;
+}
+.single-movie-img-reflection {
+  width: 50%;
+  margin: auto;
+  -webkit-box-reflect: right -2px -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(transparent),
+      color-stop(70%, transparent),
+      to(rgba(255, 255, 255, 0.3))
+    );
+}
+.single-movie-img-reflection-bottom {
+  -webkit-box-reflect: below -12px -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(255, 255, 255, 0.3)),
+      color-stop(100%, transparent),
+      to(transparent)
+    );
+}
+.single-movie-img-reflection-top {
+  -webkit-box-reflect: above -2px -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.3)),
+      color-stop(70%, transparent),
+      to(transparent)
+    );
+}
+.single-movie-img img {
+  width: 100%;
+  -webkit-box-reflect: left 0px -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.3)));
+}
+
+/*  UIverse like button animation*/
+
+.animate-jelly {
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*  UIverse like button animation*/
+
+.single-movie-watchlist {
+  height: 4vh;
+}
+.single-movie-icons {
+  cursor: pointer;
+}
+.single-movie-cast-div {
+  color: rgb(0, 145, 234);
+  cursor: pointer;
+}
+.single-movie-cast-div:hover {
+  text-decoration: underline;
+}

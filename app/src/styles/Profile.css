@@ -1,0 +1,63 @@
+.profile-container {
+  min-height: 110vh;
+  background-color: black;
+  font-size: 1.8vh;
+  color: white;
+  padding: 5vh 10vh;
+  padding-top: 20vh;
+}
+.profile-card {
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.138);
+  padding: 2vh 4vh;
+  padding-top: 3vh;
+  border-radius: 2vh;
+  border: 2px solid rgba(255, 255, 255, 0.344);
+  display: flex;
+  flex-flow: column;
+  gap: 2vh;
+}
+.profile-row > div {
+  width: 50%;
+}
+.profile-row div {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.subscribe-button {
+  padding: 0.5vh 2vh !important;
+}
+.sub-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-img-container img {
+  height: 3vh;
+  width: 3vh;
+}
+.profile-edit-button {
+  padding: 1vh 2vh !important;
+  font-size: 1.6vh !important;
+}
+.profile-textfield {
+  width: 0px !important;
+  padding: 0px !important;
+  transition: all 0.3s;
+  opacity: 0;
+  margin-left: -2vh !important;
+}
+.profile-textfield input {
+  color: white;
+}
+.profile-textfield fieldset {
+  border-color: rgba(255, 255, 255, 0.333);
+}
+.profile-textfield-show {
+  width: 100% !important;
+  padding: inherit !important;
+  opacity: 1;
+  margin-left: 0vh !important;
+}

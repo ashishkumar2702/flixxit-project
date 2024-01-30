@@ -1,0 +1,9 @@
+.allcards .anim-card {
+  display: flex;
+  margin: 0vh;
+}
+.allcards {
+  display: grid;
+  gap: 5vh;
+  grid-template-columns: repeat(auto-fill, 22vh);
+}

@@ -1,0 +1,41 @@
+.about-profile-img-org {
+  height: 40vh;
+  border-radius: 2vh;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px black;
+}
+.about-profile-img-blur {
+  height: 45vh !important;
+  border-radius: 2vh;
+  filter: blur(3px);
+  margin-right: -50%;
+}
+
+.about-profile-img-org:hover {
+  height: 45vh;
+}
+.about-profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-profile-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.about-profile-links {
+  font-size: 1.8vh;
+  opacity: 0.8;
+  cursor: pointer;
+  display: flex;
+  gap: 1vh;
+  align-items: center;
+}
+.about-profile-links:hover {
+  opacity: 1;
+}

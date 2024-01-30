@@ -1,0 +1,42 @@
+.signin-container {
+  border-radius: 0.5vh;
+  padding: 8vh;
+  background-color: rgba(0, 0, 0, 0.533);
+  color: rgba(245, 245, 245, 0.927);
+  font-size: 1.7vh;
+  width: 400px;
+  margin: auto;
+  text-align: initial;
+}
+.auth-button {
+  width: 100%;
+  background-color: #e50914 !important;
+  color: white !important;
+  text-transform: none !important;
+  padding: 1.2vh 2vh !important;
+  font-size: 1.8vh !important;
+  font-weight: 550 !important;
+  letter-spacing: 0.1vh !important;
+  border: 0.2vh solid #e50914 !important;
+}
+.auth-2-button {
+  background-color: rgba(0, 0, 0, 0.311) !important;
+  color: #e50914 !important;
+}
+.auth-button:hover {
+  background-color: #e50914;
+  color: white;
+}
+.signin-textfield {
+}
+.signin-textfield input {
+  color: white;
+}
+.signin-textfield fieldset {
+  border-color: rgba(255, 255, 255, 0.368);
+}
+.signin-textfield label {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.467);
+  padding: 0.3vh 0.6vh;
+}
